@@ -8,23 +8,23 @@ What Includes the Project:
 
     
 ## Clone the Repository
-git clone https://github.com/dhruvilrasadiya/Resume-Analysis.git
+`git clone https://github.com/dhruvilrasadiya/Resume-Analysis.git`
 
-cd Resume-Analysis
+`cd Resume-Analysis`
 
 
 ## Create a virtual environment
-python -m venv .venv
+`python -m venv .venv`
 
 
 ## Activate virtual environment
-source .venv/bin/activate      # On macOS/Linux
+`source .venv/bin/activate`      # On macOS/Linux
 
-.venv\Scripts\activate         # On Windows
+`.venv\Scripts\activate `        # On Windows
 
 
 ## Install all requirments
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 ## Set GROQ API KEY in .env file.
