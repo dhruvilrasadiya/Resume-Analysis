@@ -5,22 +5,25 @@ What Includes the Project:
     - Generate the summary using that extracted information.
     - Extract the insights from that generated summary.
     - Generate Interview Question from that insights.
+
     
 ## Clone the Repository
-
-```bash
 git clone https://github.com/dhruvilrasadiya/Resume-Analysis.git
 cd Resume-Analysis
 
+
 ## Create a virtual environment
 python -m venv .venv
+
 
 ## Activate virtual environment
 source .venv/bin/activate      # On macOS/Linux
 .venv\Scripts\activate         # On Windows
 
+
 ## Intall all requirments
 pip install -r requirements.txt
+
 
 ## Set GROQ API KEY in .env file.
 - Create .env file in the directory.
@@ -28,10 +31,13 @@ pip install -r requirements.txt
     - GROQ_API_KEY = '-----------'
     - ( get the GROK_API_KEY from the groqcloud. sign in or register with your email and create a new api key)
 
+
 ## API Access
 Run the following command to access the Swagger UI for API.
 
+
 `uvicorn main:app --reload`
+
 
 ## Resume analysis endpoint
 POST /analyze-resume
@@ -56,11 +62,10 @@ POST /resume-question
 
 Description:
     Resumes question generation based on an already generated resume summary.
-
 Args:
     req (ResumeCheckpointRequest): Includes `thread_id` and optionally the `resume_summary`.
-
 Returns:
     JSONResponse: Contains generated interview questions or error message.
+
 
 (TAKE THE SAMPLE INPUT FROM THE OUTPUT OF RESUME ANALYSIS ENDPOINT.)
